@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eshop Database</title>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <LINK rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="page">
+            <h1 align="center">Product Database</h1>
+            
+            <form method="POST" action="insert.do">
+                <div class="item">
+                    <center><input type="text" id="barcode" name="barcode" placeholder="barcode"></center>
+                </div>
+                <div class="item">
+                    <center><input type="text" id="name" name="name" placeholder="name"></center>
+                </div>
+                <div class="item">
+                    <center><input type="text" id="color" name="color" placeholder="color"></center>
+                </div>
+                <div class="item">
+                    <center><input type="text" id="description" name="description" placeholder="description"></center>
+                </div>
+                
+                <center><input type="submit" value="Insert product"></center>
+            </form>
+            
+            <form method="POST" action="view.do">
+                <br>
+                <center><input type="submit" value="View database"></center>
+            </form>
+        </div>
+    </body>
+</html>
